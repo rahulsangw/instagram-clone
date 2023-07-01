@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    
+    <style>
+        body{
+            /* background-color: black; */
+        }
+
+        .canvas-1{
+            width:10%;
+            float: left;
+        }
+        .canvas-2{
+            width: 75%;
+            float: right;
+        }
+        header{
+            display: flex;
+            gap: 50px;
+            justify-content: center;
+        }
+
+       .profile-pic img{
+            margin: 10px;
+            height:160px;
+            width: 160px;
+            border-radius:50%;
+        }
+
+        .profile-pic{
+            display: flex;
+            justify-content: center;
+            width: 250px;
+
+        }
+
+        .username{
+            display: flex;
+            align-items: center;
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: 800;
+        }
+
+        section{
+            display: flexbox;
+        }
+
+        .bio{
+           height: -20px;
+           padding-bottom:-10px;
+        }
+
+        .bio span{
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+         .bio h1{
+            clear: left;
+            font-size: 16px;
+        }
+
+        .upper-div{
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            height: 70vh;
+        }
+
+        .follow{
+            list-style: none;
+            display: flex;
+            gap: 40px;
+            font-size: 20px;
+            padding: 0px;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .follow span{
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+       .edit{
+        font-size: 14px;
+        height: 35px;
+        width: 100px;
+        border-radius: 15%;
+        margin: 10px;
+        border: none;
+       }
+
+       .settings{
+        height: 30px;
+        width: 30px;
+        margin: 10px;
+        background-color: white;
+       }
+       .archives{
+       margin-top: -300px;
+       }
+
+       .archive-img{
+        display: flex;
+        justify-content:center;
+        margin-left: -408px;
+       }
+
+       .archive-img img{
+        height: 100px;
+        width: 100px;
+       }
+       .archive-img p{
+        text-align: center;
+        font-family: 'Ubuntu', sans-serif;
+       }
+
+
+       .footers{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+       }
+
+       .footers span{
+        color: rgb(139, 130, 130);
+        font-size: 14px;
+        font-family: 'Ubuntu', sans-serif;
+       }
+
+       .posts{
+        display: flex;
+        flex-direction: column;
+        margin-left: 40px;
+        gap: 20px;
+       }
+
+       .post-pic{
+        height: 280px;
+        width: 250px;
+        border-radius: 0%;
+       }
+
+       .photos{
+        display: flex;
+        justify-content: center;
+       }
+
+       .posts-icon{
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        
+       }
+       .posts-icon > div{
+        display: flex;
+       }
+       .posts-icon > div > img{
+        height: 20px;
+        width: 20px;
+        border-radius: 0%;
+       }
+
+       footer{
+        display: flex;
+        gap: 40px;
+        justify-content: center;
+       }
+       footer p{
+        color: rgb(139, 130, 130);
+        font-size: 14px;
+        font-family: 'Ubuntu', sans-serif;
+       }
+
+
+       .instagram{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 100px;
+        width:250px;
+        gap: 20px;
+       }
+
+       .instagram .pic{
+        height: 50px;
+        width: 50px;
+       }
+
+       .canvas-1 div{
+        display: flex;
+        gap:40px;
+        padding:20px;
+       }
+
+       .canvas-1 div span{
+        font-size: 20px;
+        font-family: 'Ubuntu', sans-serif;
+       }
+
+    </style>
+</head>
+<body>
+
+    <div class="canvas-1">
+        <div class="instagram">
+            <img class="pic" src="../images/instagram.png" alt="instagram">
+            <img src="../images/Instagram_Logo_2016.png" alt="instagram-icon" style="height: 70px; width: 210px;">
+        </div>
+        <div class="home">
+            <img src="../images/home.png" alt="home-icon" style="height:30px ;width:30px;">
+            <span>Home</span>
+        </div>
+
+        <div class="search">
+            <img src="../images/search.png" alt="home-icon" style="height:30px ;width:30px;">
+            <span>Search</span>
+        </div>
+       
+        <div class="reels">
+            <img src="../images/reels.png" alt="home-icon" style="height:30px ;width:30px;">
+            <span>Reels</span>
+        </div>
+        <div class="Messages">
+            <img src="../images/chat.png" alt="home-icon" style="height:30px ;width:30px;">
+            <span>Messages</span>
+        </div>
+        <div class="notifications">
+            <img src="../images/heart.png" alt="home-icon" style="height:30px ;width:30px;">
+            <span>notifications</span>
+        </div>
+        <div class="create">
+            <img src="../images/create.png" alt="home-icon" style="height:30px ;width:30px;">
+            <span>Create</span>
+        </div>
+        <div class="profile">
+            <img src="../images/rahul.jpg" alt="home-icon" style="height:30px ;width:30px;border-radius: 50%;">
+            <span>Profile</span>
+        </div>
+        <div class="more" style="margin-top: 100px;">
+            <img src="../images/more.png" alt="home-icon" style="height:30px ;width:30px;">
+            <span>More</span>
+        </div>
+    </div>
+
+
+
+    <div class="canvas-2">
+    <div class="upper-div"><!--Main-container-->
+        <header><!--2nd main conatiner-->
+            <div class="profile-pic">
+                    <img src="../images/rahul.jpg" alt="rahul image">
+                </div>
+            
+                <section>
+                    <div class="username">
+                        <h2 style="font-size: 20px; font-weight: lighter;">rahulsangwan_03</h2>
+                        <button class="edit">Edit profile</button>
+                        <img class="settings" src="../images/settings.png" alt="Settings">
+                    </div>
+
+                    <div class="follow">
+                        <p><span>3</span> posts</p>
+                        <p><span>189</span> followers</p>
+                        <p><span>366</span> following</p>
+                    </div>
+
+                    <div class="bio">
+                      <span style="float: left; font-size: 16px;">Rahul Sangwan</span>
+                      <h1>"Exhale the depression as the wind blows.<br>These are the laws of living in vogue."
+                      </h1>        
+                    </div>
+                </section>
+            </div>
+      </header>
+
+      <div class="archives"><!--2nd main conatiner-->
+            <div class="archive-img">
+                <div class="does-fit">
+                    <img src="../images/does fit.jpg" alt="does fit" style="border-radius: 50%;">
+                 <p sty>does fit</p>
+                </div>
+
+                <div class="new" style="margin-left: 40px;">
+                    <img src="../images/add new icon.png" alt="new icon">
+                 <p>new</p>
+                </div>
+           
+             </div>
+        </div>
+
+        <div class="posts"><!--2nd main conatiner-->
+
+            <div class="posts-icon">
+                <span style="font-family: ubuntu; margin-top: 10px;">P O S T S</span>
+                <div><img src="../images/save_9694593.png" alt="save-icon" style="margin-top: 10px;margin-right:5px;"><span style=" margin-top: 10px; font-family: ubuntu;">S A V E D</span></div>
+                <span style="font-family: ubuntu;margin-top: 10px;">T A G G E D </span>
+            </div>
+
+            <div class="photos" style="gap:40px;">
+                <img src="../images/rahul.jpg" alt="rahul-post" class="post-pic">
+                <img src="../images/coffee.jpg" alt="coffee-post" class="post-pic">
+            </div>
+
+            <div class="footers">
+                <span>Meta</span>
+                <span>About</span>
+                <span>Blog</span>
+                <span>Jobs</span>
+                <span>Help</span>
+                <span>API</span>
+                <span>Privacy</span>
+                <span>Terms</span>
+                <span>Top Accounts</span>
+                <span>Locations</span>
+                <span>Instagram Lite</span>
+                <span>Contact Uploading & Non-Users</span>
+                <span>Meta Verified</span>
+            </div>
+        </div>
+        <footer>
+            <p>English</p>
+            <p>© 2023 Instagram from Meta</p>
+        </footer>
+ </div>
+</div>
+</body>
+</html>
